@@ -72,6 +72,7 @@ const WeatherChecker = () => {
     if (cityName && !favorites.includes(cityName)) {
       const updatedFavorites = [...favorites, cityName];
       setFavorites(updatedFavorites);
+      localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
     }
   };
 
@@ -86,6 +87,7 @@ const WeatherChecker = () => {
   const handleRemoveFavorite = (favorite) => {
     const updatedFavorites = favorites.filter((item) => item !== favorite);
     setFavorites(updatedFavorites);
+    localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
   };
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
