@@ -27,8 +27,8 @@ export default defineConfig({
         name: "Weather App",
         short_name: "Weather",
         description: "A Progressive Web App for weather updates",
-        theme_color: "#ffffff",
-        background_color: "#ffffff",
+        theme_color: "#000",
+        background_color: "#000",
         display: "standalone",
         start_url: ".",
         icons: [
