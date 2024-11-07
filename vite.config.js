@@ -30,14 +30,15 @@ export default defineConfig({
         theme_color: "#ffffff",
         background_color: "#ffffff",
         display: "standalone",
+        start_url: ".",
         icons: [
           {
-            src: "hunt-weather.webp",
+            src: "hunt-weather.png",
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "hunt-weather.webp",
+            src: "hunt-weather.png",
             sizes: "512x512",
             type: "image/png",
           },
